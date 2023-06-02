@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7A6868"
+    tools:context=".CharacterActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/backBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewName">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:text="Основная информация"
+                android:textAlignment="center"
+                android:textColor="#EDE9E9"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/textViewMainInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Редкость: 5 звёзд \nГлаз бога: Пиро \nОружие: Двуручный меч"
+                android:textColor="#EDE9E9"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Материалы для улучшения"
+                android:textAlignment="center"
+                android:textColor="#EDE9E9"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:text="Возвышение персонажа"
+                android:textAlignment="center"
+                android:textColor="#EDE9E9"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewLevelUpMats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text=" Трава-светяшка - 168 Осколок агата Агнидус - 1 Фрагмент агата Агнидус - 9 Кусок агата Агнидус - 9 Драгоценный агат Агнидус - 6 Шеврон рядового - 18 Шеврон сержанта - 30 Шеврон офицера - 36 Пылающее семя - 46 Мора - 420 тыс. Опыт героя - 421"
+                android:textColor="#EDE9E9"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:text="Повышение уровня  одного навыка"
+                android:textAlignment="center"
+                android:textColor="#EDE9E9"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewTalentsMats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:text=" Трава-светяшка - 168 Осколок агата Агнидус - 1 Фрагмент агата Агнидус - 9 Кусок агата Агнидус - 9 Драгоценный агат Агнидус - 6 Шеврон рядового - 18 Шеврон сержанта - 30 Шеврон офицера - 36 Пылающее семя - 46 Мора - 420 тыс. Опыт героя - 421"
+                android:textColor="#EDE9E9"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:text="Оружие"
+                android:textAlignment="center"
+                android:textColor="#EDE9E9"
+                android:textSize="34sp" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+
+            </androidx.viewpager2.widget.ViewPager2>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:text="Артефакты"
+                android:textAlignment="center"
+                android:textColor="#EDE9E9"
+                android:textSize="34sp" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/pager2"
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+
+            </androidx.viewpager2.widget.ViewPager2>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageViewName"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/diluc_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#00FFFFFF"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/btn_back_style"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
